@@ -1,6 +1,11 @@
+# references
+# http://elinux.org/RPiconfig and https://www.raspberrypi.org/documentation/configuration
+
 [pi1]
 arm_freq=1000
 core_freq=500
+# some pi do work with a core at 600
+# core_freq=600
 sdram_freq=600
 over_voltage=6
 
@@ -8,10 +13,13 @@ over_voltage=6
 arm_freq=1000
 core_freq=450
 sdram_freq=450
+# some pi2 working with a little bit more speed
+# core_freq=500
+# sdram_freq=500
 over_voltage=2
 
 [0x12345678]
-# settings here are applied only to the Pi with this serial get via 
+# settings here are applied only to the pi with this serial get via 
 # cat /proc/cpuinfo
 
 [all]
