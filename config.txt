@@ -1,0 +1,19 @@
+[pi1]
+arm_freq=1000
+core_freq=500
+sdram_freq=600
+over_voltage=6
+
+[pi2]
+arm_freq=1000
+core_freq=450
+sdram_freq=450
+over_voltage=2
+
+[0x12345678]
+# settings here are applied only to the Pi with this serial get via 
+# cat /proc/cpuinfo
+
+[all]
+device_tree_param=act_led_trigger=heartbeat
+gpu_mem=1
